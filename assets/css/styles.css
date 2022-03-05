@@ -5,7 +5,18 @@
 }
 
 /* tutorial on css style radial-gradient() -- https://www.w3schools.com/CSSref/func_radial-gradient.asp */
+/* Styling for the body and to center page items */
 body {
-    height: 100vh;
+
     background: radial-gradient(white, #03c03c, #027524);
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100px;
 }
