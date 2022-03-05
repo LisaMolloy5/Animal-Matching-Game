@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/* tutorial on css style radial-gradient() -- https://www.w3schools.com/CSSref/func_radial-gradient.asp */
 body {
-    background-color: 	aqua;
+    height: 100vh;
+    background: radial-gradient(white, #03c03c, #027524);
 }
