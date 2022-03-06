@@ -1,4 +1,6 @@
-let cards = document.querySelectorAll('.card')
+let cards = document.querySelectorAll('.card');
+let matchesRef = document.getElementById('matches');
+let matches = 0;
 
 let cardFlipped = false;
 let lockGame = false;
@@ -30,9 +32,22 @@ function checkMatch() {
         firstCard.removeEventListener('click', flipCards)
         secondCard.removeEventListener('click', flipCards)
 
+        // To update the number of matches by 1 for each pair.
+        matches++;
+        matchesRef.innerText = matches;
+
 
     } else {
         unflipCards();
+    }
+
+    // To alert the player they have won.
+    if (Number(matchesRef.innerText) === 8) {
+        if (Number(matchesRef.innerText) === 8) {
+            setTimeout(() => {
+                alert('You Won!!')
+            }, 500);
+        }
     }
 }
 
