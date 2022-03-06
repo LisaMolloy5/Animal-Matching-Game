@@ -101,3 +101,21 @@ h1 {
 .back {
     backface-visibility: hidden;
 }
+
+/* Styling for the website buttons*/
+.btn {
+    
+    border: 5px solid #14fb5a;
+    border-radius: 10px;
+
+    font-family: 'ABeeZee', sans-serif;
+    font-weight: 700;
+    font-size: 150%;
+
+    background-color: white;
+
+    padding: .5em;
+
+
+
+}
