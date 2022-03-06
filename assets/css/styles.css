@@ -17,6 +17,17 @@ body {
     align-items: center;
 }
 
+/* Timer and Matches section */
+.time-match-container {
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+}
+
+.timer {
+    margin-right: 10em;
+}
+
 /* Game Section*/
 .game-container {
 
@@ -52,8 +63,4 @@ body {
 
 
     border: 2px solid pink;
-}
-
-img {
-    width: 50px;
 }
