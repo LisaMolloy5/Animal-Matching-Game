@@ -1,32 +1,37 @@
-let cards = document.querySelectorAll('.card');
+
+// Tutorial adapted and added to for this project - https://www.youtube.com/watch?v=ZniVgo8U7ek
+
+const cards = document.querySelectorAll('.card');
+const startButton = document.getElementById('start-btn');
+const howButton = document.getElementById('how-btn');
+const scoreCon = document.getElementById('score-container')
+const gameCon = document.getElementById('game-container')
 let matchesRef = document.getElementById('matches');
 let matches = 0;
 let timeLeft = 120;
-
-let timerRef = setInterval(function() {
-    if(timeLeft <= 0){
-        clearInterval(timerRef);
-        alert('You lost, click the reset button to try again!!')
-        lockGame = true
-        
-    } 
-    document.getElementById('timer').innerText = timeLeft;
-    timeLeft--;
-},1000)
-
-
 let cardFlipped = false;
 let lockGame = false;
 let firstCard, secondCard;
 
 
+// Code adapted for the timer function - https://www.codegrepper.com/code-examples/javascript/javascript+countdown+timer+minutes%2C+seconds
 
-function lost() {
-    if (Number(document.getElementById('timer').innerText <= 0)) {
-        console.log('stop')
+// Game countdown timer
+let timerRef = setInterval(function () {
+    if (timeLeft <= 0) {
+        clearInterval(timerRef);
+
+        // To alert the player they have ran out of timer
+        alert('You lost, click the reset button to try again!!')
+        lockGame = true
+
     }
-}
+    document.getElementById('timer').innerText = timeLeft;
+    timeLeft--;
+}, 1000)
 
+
+// To flip game cards to reveal face
 function flipCards() {
     if (lockGame) return;
 
@@ -97,7 +102,19 @@ function init() {
     shuffle()
 }
 
+function start() {
+    startButton.classList.add('hide')
+    howButton.classList.add('hide')
+    
+    scoreCon.classList.remove('hide')
+    gameCon.classList.remove('hide')
+
+}
+
 init();
+
+startButton.addEventListener('click', start)
+
 
 document.getElementById("restart-btn").onclick = () => window.location.reload();
 

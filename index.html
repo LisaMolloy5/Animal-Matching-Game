@@ -12,15 +12,21 @@
 <body>
     <!-- Page Heading-->
     <h1>Animal Match</h1>
+    <button id="start-btn" class="btn">Start</button>
+    <div>
+        <button id="how-btn" class="btn">How To Play</button>
+        <p  id="how-to" class="hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quae.</p>
+    </div>
+    
 
     <!-- To display the game timer and matches -->
-    <div class="time-match-container">
+    <div id="score-container" class="time-match-container hide">
         <div class="timer">Time: <span id="timer"></span></div> 
         <div class="matches">Matches: <span id="matches"></span></div> 
     </div>
 
     <!-- Game container-->
-    <section class="game-container">
+    <section id="game-container" class="game-container hide">
         <div class="card" data-name="chameleon">
             <img src="assets/images/chameleon.jpg" alt="chameleon" class="face">
             <img src="assets/images/background.jpg" alt="background" class="back">
@@ -89,7 +95,7 @@
     </section>
 
     <!--Button to reset the game page-->
-    <button id="restart-btn" class="btn">RESTART</button>
+    <button id="restart-btn" class="btn">Restart</button>
 
 
     <script src="assets/js/script.js"></script>

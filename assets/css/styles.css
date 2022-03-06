@@ -116,6 +116,15 @@ h1 {
 
     padding: .5em;
 
-
-
 }
+
+p {
+    border: #027524;
+    background-color: white;
+    
+}
+
+.hide {
+    display: none;
+}
+
