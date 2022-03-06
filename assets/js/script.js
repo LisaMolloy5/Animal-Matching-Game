@@ -63,7 +63,10 @@ function unflipCards() {
 }
 
 function shuffle() {
-
+    cards.forEach(() => {
+        let randomize = Math.floor(Math.random * 16);
+        card.style.order = randomize;
+    })
 }
 
 
