@@ -17,6 +17,13 @@ body {
     align-items: center;
 }
 
+.game-container {
+   height: 600px;
+   width: 600px;
+   display: flex;
+   flex-wrap: wrap;
+}
+
 img {
-    width: 100px;
+    width: 50px;
 }
