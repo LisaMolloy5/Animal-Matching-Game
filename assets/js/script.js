@@ -63,11 +63,16 @@ function unflipCards() {
 }
 
 function shuffle() {
-    cards.forEach(() => {
-        let randomize = Math.floor(Math.random * 16);
+    cards.forEach(card => {
+        let randomize = Math.floor(Math.random() * 16);
         card.style.order = randomize;
     })
+};
+function init() {
+    shuffle()
 }
+
+init();
 
 
 cards.forEach(card => card.addEventListener('click', flipCards))
