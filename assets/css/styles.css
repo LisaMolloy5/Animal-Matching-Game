@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Mochiy+Pop+P+One&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -17,14 +19,29 @@ body {
     align-items: center;
 }
 
+h1 {
+    color: white;
+
+    letter-spacing: 5px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
 /* Timer and Matches section */
 .time-match-container {
+
     display: flex;
     flex-direction: row;
+
     margin: 1em;
+
+    font-family: 'ABeeZee', sans-serif;
+    font-weight: 700;
+
+    color: white;
 }
 
 .timer {
+
     margin-right: 10em;
 }
 
