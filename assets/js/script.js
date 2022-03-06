@@ -1,12 +1,14 @@
 let cards = document.querySelectorAll('.card');
 let matchesRef = document.getElementById('matches');
 let matches = 0;
-let timeLeft = 10
+let timeLeft = 120;
 
 let timerRef = setInterval(function() {
     if(timeLeft <= 0){
         clearInterval(timerRef);
         alert('You lost, click the reset button to try again!!')
+        lockGame = true
+        
     } 
     document.getElementById('timer').innerText = timeLeft;
     timeLeft--;
