@@ -1,22 +1,26 @@
 let cards = document.querySelectorAll('.card');
 let matchesRef = document.getElementById('matches');
 let matches = 0;
+let timeLeft = 10
 
-let timerVariable = setInterval(updateTimer, 1000);
-let timerRef = document.getElementById('timer')
-let timeLeft = 10;
+let timerRef = setInterval(function() {
+    if(timeLeft <= 0){
+        clearInterval(timerRef);
+        alert('You lost, click the reset button to try again!!')
+    } 
+    document.getElementById('timer').innerText = timeLeft;
+    timeLeft--;
+},1000)
+
 
 let cardFlipped = false;
 let lockGame = false;
 let firstCard, secondCard;
 
-function updateTimer() {
-    timeLeft--;
-    timerRef.innerText = timeLeft;
-}
+
 
 function lost() {
-    if (Number(timerRef.innerText === 1)) {
+    if (Number(document.getElementById('timer').innerText <= 0)) {
         console.log('stop')
     }
 }
