@@ -5,7 +5,7 @@
 }
 
 /* tutorial on css style radial-gradient() -- https://www.w3schools.com/CSSref/func_radial-gradient.asp */
-/* Styling for the body and to center page items */
+
 body {
 
     background: radial-gradient(white, #03c03c, #027524);
@@ -17,11 +17,22 @@ body {
     align-items: center;
 }
 
+/* Game Section*/
 .game-container {
-   height: 600px;
-   width: 600px;
-   display: flex;
-   flex-wrap: wrap;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card {
+    height: 20%;
+    width: 20%;
+
+    margin: 2px;
 }
 
 img {
