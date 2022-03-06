@@ -1,9 +1,12 @@
 let cards = document.querySelectorAll('.card')
 
 let cardFlipped = false;
+let lockGame = false;
 let firstCard, secondCard;
 
 function flipCards() {
+    if (lockGame) return;
+
     this.classList.toggle('flip')
 
     if (!cardFlipped) {
@@ -15,29 +18,33 @@ function flipCards() {
         cardFlipped = false;
         secondCard = this;
 
-        // check for match
-
-        if (firstCard.dataset.name ===
-            secondCard.dataset.name) {
-
-            firstCard.removeEventListener('click', flipCards)
-            firstCard.removeEventListener('click', flipCards)
-        } else {
-            setTimeout(() => {
-             firstCard.classList.remove('flip')
-            secondCard.classList.remove('flip')   
-            }, 1000)
-            
-        }
+        checkMatch()
     }
 }
 
-function unflipCard() {
-
-}
 
 function checkMatch() {
+    if (firstCard.dataset.name ===
+        secondCard.dataset.name) {
 
+        firstCard.removeEventListener('click', flipCards)
+        secondCard.removeEventListener('click', flipCards)
+
+
+    } else {
+        unflipCards();
+    }
+}
+
+function unflipCards() {
+    lockGame = true;
+
+    setTimeout(() => {
+        firstCard.classList.remove('flip')
+        secondCard.classList.remove('flip')
+
+        lockGame = false;
+    }, 1000);
 }
 
 function shuffle() {
