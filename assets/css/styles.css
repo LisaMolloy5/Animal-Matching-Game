@@ -118,6 +118,21 @@ h1 {
 
 }
 
+.main-btn {
+    border: 5px solid #14fb5a;
+    border-radius: 10px;
+
+    font-family: 'ABeeZee', sans-serif;
+    font-weight: 700;
+    font-size: 150%;
+
+    margin-top: 130px;
+
+    background-color: white;
+
+    padding: .5em;
+}
+
 p {
     border: #027524;
     background-color: white;

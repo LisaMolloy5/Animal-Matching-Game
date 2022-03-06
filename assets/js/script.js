@@ -6,6 +6,8 @@ const startButton = document.getElementById('start-btn');
 const howButton = document.getElementById('how-btn');
 const scoreCon = document.getElementById('score-container')
 const gameCon = document.getElementById('game-container')
+const restart = document.getElementById('restart-btn')
+const howToPlay = document.getElementById('how-to')
 let matchesRef = document.getElementById('matches');
 let matches = 0;
 let timeLeft = 120;
@@ -105,15 +107,23 @@ function init() {
 function start() {
     startButton.classList.add('hide')
     howButton.classList.add('hide')
-    
+
     scoreCon.classList.remove('hide')
     gameCon.classList.remove('hide')
+    restart.classList.remove('hide')
+}
+
+function howTo() {
+    startButton.classList.add('hide')
+    howButton.classList.add('hide')
+    howToPlay.classList.remove('hide')
 
 }
 
 init();
 
 startButton.addEventListener('click', start)
+howButton.addEventListener('click', howTo)
 
 
 document.getElementById("restart-btn").onclick = () => window.location.reload();
