@@ -1,10 +1,15 @@
 let cards = document.querySelectorAll('.card')
 
 
-function flipCard() {
+function flipCards() {
+
+    this.classList.toggle('flip')
+
     
 
 }
+
+cards.forEach(card => card.addEventListener('click', flipCards))
 
 function checkMatch() {
 
