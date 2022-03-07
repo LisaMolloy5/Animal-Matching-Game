@@ -144,3 +144,30 @@ p {
     background-color: white;
     
 }
+
+.instructions {
+
+    margin-top: 50px;
+
+    text-align: center;
+
+    border: 2px solid #027524;
+    background-color: white;
+
+    width: 300px;
+    height: 150px;
+    
+    font-family: 'ABeeZee', sans-serif;
+}
+
+
+.instructions p {
+    margin: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+
+
