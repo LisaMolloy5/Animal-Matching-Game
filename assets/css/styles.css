@@ -197,32 +197,52 @@ p {
 
 /* Media Queries */
 
-/* For media screen sizes 500px - 600px */
-@media screen and (min-width: 500px) {
+/* For media screen sizes 400px - 700px */
+@media screen and (min-width: 400px) {
+
     h1 {
-        font-size: 300%;
+        font-size: 200%;
+    }
+
+    .game-container {
+        height: 400px;
+        width: 400px;
+    }
+
+} 
+
+
+/* For media screen sizes 700px - 800px */
+@media screen and (min-width: 700px) {
+    .game-container {
+        height: 420px;
+        width: 420px;
     }
 
     .menu {
-
-        margin-top: 100px;
-
-        width: 400px;
-        height: 200px;
+        height: 300px;
     }
 
     .btn {
-        font-size: 100%;
-    }
-
-    .timer {
-        margin-right: 10em;
-    }
-
-    .time-match-container {
         font-size: 120%;
     }
+}
 
+/* For media screen sizes 700px - 800px */
+@media screen and (min-width: 900px) {
+    .game-container {
+        height: 470px;
+        width: 470px;
+    }
+}
+
+/* For media screen sizes 1000px - 1200px */
+@media screen and (min-width: 1000px) {
+    
+    h1 {
+        font-size: 300%;
+    }
+    
     .game-container {
         height: 500px;
         width: 500px;
@@ -231,36 +251,36 @@ p {
 
 }
 
-/* For media screen sizes 700px - 1500px */
-@media screen and (min-width: 700px) {
+/* For media screen sizes 1200px - 1500px */
+@media screen and (min-width: 1200px) {
+    h1 {
+        font-size: 350%;
+    }
+    
     .game-container {
-        height: 650px;
-        width: 650px;
+        height: 600px;
+        width: 600px;
     }
 
-    .menu {
-        height: 300px;
+    .time-match-container {
+        font-size: 170%;
     }
 
-    .btn {
-        font-size: 150%;
-    }
 }
 
 /* For media screen sizes 1500px - 2000px */
 @media screen and (min-width: 1500px) {
-    .instructions {
-        width: 500px;
-        height: 200px;
-    }
-
     .game-container {
-        height: 750px;
-        width: 750px;
+        height: 780px;
+        width: 780px;
     }
 
     .time-match-container {
-        font-size: 140%;
+        font-size: 200%;
+    }
+
+    .btn {
+        font-size: 200%;
     }
 }
 
