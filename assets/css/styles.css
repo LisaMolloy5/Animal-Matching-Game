@@ -12,7 +12,7 @@ html {
 
 /* CSS gradient tutorial -- https://www.w3schools.com/css/css3_gradients.asp*/
 body {
-    background-image: linear-gradient( #ccffee, #7fffd4, #4cffc3);
+    background-image: linear-gradient( white, #ccffee, #33ffba, #00ffa9);
    
     display: flex;
     flex-direction: column;
@@ -22,18 +22,28 @@ body {
 }
  /* Home page menu*/
 .menu {
+
+    border: 8px dashed #027524;
+    border-radius: 10px;
+    padding: 2em;
+
     text-align: center;
 
     display: flex;
     flex-direction: column;
 
-    margin-top: 200px;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 50px;
 
     gap: 50px;
 }
 
 h1 {
     color: black;
+
+    margin-top: 10px;
 
     letter-spacing: 5px;
     font-family: 'Mochiy Pop P One', sans-serif;
@@ -55,14 +65,14 @@ h1 {
 
 .timer {
 
-    margin-right: 10em;
+    margin-right: 5em;
 }
 
 /* Game Section*/
 .game-container {
 
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 350px;
     max-width: 100%;
 
     display: flex;
@@ -74,11 +84,13 @@ h1 {
 
 }
 
-
+/* Box Sahdow tutorial -- https://www.w3schools.com/css/css3_shadows_box.asp#:~:text=The%20CSS%20box-shadow%20property%20is%20used%20to%20apply,color%20of%20the%20shadow%20is%20the%20current%20text-color.*/ 
 .card {
 
     width: 20%;
     height: 20%;
+
+    box-shadow:  0 4px 8px 0 #027524;
 
     margin: 3px;
 
@@ -117,6 +129,9 @@ h1 {
 
 /* Styling for the website buttons*/
 .btn {
+
+    width: 80%;
+
     color: black;
 
     text-decoration: none;
@@ -126,12 +141,17 @@ h1 {
 
     font-family: 'ABeeZee', sans-serif;
     font-weight: 700;
-    font-size: 150%;
+    font-size: 100%;
 
     background-color: white;
 
     padding: .5em;
 
+}
+
+.btn:hover {
+    border-color: #027524;
+    color: #14fb5a;
 }
 
 .controls {
@@ -153,11 +173,11 @@ p {
 
     text-align: center;
 
-    border: 2px solid #027524;
+    border: 5px dashed #027524;
     background-color: white;
 
     width: 300px;
-    height: 200px;
+    height: 170px;
 
     font-family: 'ABeeZee', sans-serif;
 }
@@ -169,4 +189,40 @@ p {
 
 .hide {
     display: none;
+}
+
+/* Media Queries */
+
+/* For media screen sizes 500px */
+@media screen and (min-width: 500px) {
+    h1{
+        font-size: 300%;
+    }
+
+    .menu {
+
+        margin-top: 100px;
+
+        width: 400px;
+        height: 200px;
+    }
+
+    .btn {
+        font-size: 100%;
+    }
+
+    .timer {
+        margin-right: 10em;
+    }
+
+    .time-match-container{
+        font-size: 120%;
+    }
+
+    .game-container {
+        height: 500px;
+        width: 500px;
+    }
+
+
 }
