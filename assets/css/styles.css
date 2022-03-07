@@ -6,19 +6,21 @@
     box-sizing: border-box;
 }
 
-/* tutorial on css style radial-gradient() -- https://www.w3schools.com/CSSref/func_radial-gradient.asp */
+html {
+    height: 100vh;
+}
 
+/* CSS gradient tutorial -- https://www.w3schools.com/css/css3_gradients.asp*/
 body {
-
-    background: radial-gradient(#ccffee, #4cffc3);
-
+    background-image: linear-gradient( #ccffee, #7fffd4, #4cffc3);
+   
     display: flex;
     flex-direction: column;
 
     justify-content: center;
     align-items: center;
 }
-
+ /* Home page menu*/
 .menu {
     text-align: center;
 
@@ -31,7 +33,7 @@ body {
 }
 
 h1 {
-    color: white;
+    color: black;
 
     letter-spacing: 5px;
     font-family: 'Mochiy Pop P One', sans-serif;
@@ -48,7 +50,7 @@ h1 {
     font-family: 'ABeeZee', sans-serif;
     font-weight: 700;
 
-    color: white;
+    color: black;
 }
 
 .timer {
@@ -106,7 +108,7 @@ h1 {
     height: 100%;
 
 
-    border: 2px solid pink;
+    border: 2px solid #027524;
 }
 
 .back {
@@ -142,7 +144,7 @@ h1 {
 p {
     border: #027524;
     background-color: white;
-    
+
 }
 
 .instructions {
@@ -155,19 +157,16 @@ p {
     background-color: white;
 
     width: 300px;
-    height: 150px;
-    
+    height: 200px;
+
     font-family: 'ABeeZee', sans-serif;
 }
 
 
 .instructions p {
-    margin: 20px;
+    margin: 15px;
 }
 
 .hide {
     display: none;
 }
-
-
-
