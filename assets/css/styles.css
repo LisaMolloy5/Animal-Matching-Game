@@ -7,12 +7,15 @@
 }
 
 html {
-    height: 100vh;
+    height: 150vh;
+
+
 }
 
 /* CSS gradient tutorial -- https://www.w3schools.com/css/css3_gradients.asp*/
 body {
-    background-image: linear-gradient(white, #ccffee, #33ffba, #00ffa9);
+
+    background-image: linear-gradient(#d3fee0, #03a734, #027524);
 
     display: flex;
     flex-direction: column;
@@ -245,9 +248,10 @@ p {
     }
 
     .game-container {
-        height: 400px;
-        width: 400px;
+        height: 450px;
+        width: 450px;
     }
+
 }
 
 /* For screen sizes 600px - 800px */
@@ -273,9 +277,12 @@ p {
         height: 600px;
         width: 600px;
     }
+
+
+
 }
 
-/* For screen sizes 800px - 1100px */
+/* For screen sizes 800px - 1000px */
 @media screen and (min-width: 800px) {
 
     h1 {
@@ -288,14 +295,23 @@ p {
     }
 
     .game-container {
-        height: 670px;
-        width: 670px;
+        height: 700px;
+        width: 700px;
     }
 
     .btn {
 
         font-size: 150%;
 
+    }
+
+}
+
+/* For screen sizes 800px - 1000px */
+@media screen and (min-width: 1000px) {
+    .game-container {
+        height: 700px;
+        width: 700px;
     }
 
 }
