@@ -4,7 +4,7 @@ const cards = document.querySelectorAll('.card');
 const restart = document.getElementById('restart-btn')
 const howToPlay = document.getElementById('how-to')
 let matchesRef = document.getElementById('matches');
-let matches = 0
+let matches = 0;
 let timeLeft = 120;
 let cardFlipped = false;
 let lockGame = false;
@@ -66,15 +66,13 @@ function checkMatch() {
 
     // To alert the player they have won.
 
-    if (Number(matchesRef.innerText) === 8) {
+    if (Number(matchesRef.innerText) === 4) {
         setTimeout(() => {
-            alert('CONGRATULATIONS YOU WON!!! CLICK RESTART TO PLAY AGAIN')
+            alert('You Won!!')
         }, 500);
     }
+
 }
-
-
-
 
 // To unflip the cards that don't match
 function unflipCards() {
