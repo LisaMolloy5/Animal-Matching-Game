@@ -293,7 +293,9 @@ p {
     }
 
     .btn {
+
         font-size: 150%;
+
     }
 
 }
@@ -306,7 +308,7 @@ p {
     }
 }
 
-/* For screen sizes 1500px */
+/* For screen sizes 2000px */
 @media screen and (min-width: 1500px) {
     h1 {
         font-size: 350%;
@@ -338,6 +340,43 @@ p {
         height: 700px;
         width: 700px;
     }
+
+}
+
+/* For screen sizes 2000px and up */
+@media screen and (min-width: 2000px) {
+
+    h1 {
+        font-size: 400%;
+    }
+
+    .btn {
+        font-size: 200%;
+    }
+
+    .instructions {
+        width: 600px;
+        height: 400px;
+    }
+
+    .zookeeper-img img {
+        height: 170px;
+        width: 170px;
+    }
+
+    .instructions p {
+        font-size: 150%;
+    }
+
+    .time-match-container {
+        font-size: 230%;
+    }
+
+    .game-container {
+        height: 900px;
+        width: 900px;
+    }
+
 
 
 }
