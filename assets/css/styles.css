@@ -12,16 +12,19 @@ html {
 
 /* CSS gradient tutorial -- https://www.w3schools.com/css/css3_gradients.asp*/
 body {
-    background-image: linear-gradient( white, #ccffee, #33ffba, #00ffa9);
-   
+    background-image: linear-gradient(white, #ccffee, #33ffba, #00ffa9);
+
     display: flex;
     flex-direction: column;
 
     justify-content: center;
     align-items: center;
 }
- /* Home page menu*/
+
+/* Home page menu*/
 .menu {
+
+    width: 90%;
 
     border: 8px dashed #027524;
     border-radius: 10px;
@@ -47,6 +50,7 @@ h1 {
 
     letter-spacing: 5px;
     font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 150%;
 }
 
 /* Timer and Matches section */
@@ -84,13 +88,13 @@ h1 {
 
 }
 
-/* Box Sahdow tutorial -- https://www.w3schools.com/css/css3_shadows_box.asp#:~:text=The%20CSS%20box-shadow%20property%20is%20used%20to%20apply,color%20of%20the%20shadow%20is%20the%20current%20text-color.*/ 
+/* Box Sahdow tutorial -- https://www.w3schools.com/css/css3_shadows_box.asp#:~:text=The%20CSS%20box-shadow%20property%20is%20used%20to%20apply,color%20of%20the%20shadow%20is%20the%20current%20text-color.*/
 .card {
 
     width: 20%;
     height: 20%;
 
-    box-shadow:  0 4px 8px 0 #027524;
+    box-shadow: 0 4px 8px 0 #027524;
 
     margin: 3px;
 
@@ -130,7 +134,7 @@ h1 {
 /* Styling for the website buttons*/
 .btn {
 
-    width: 80%;
+    width: 100%;
 
     color: black;
 
@@ -176,8 +180,8 @@ p {
     border: 5px dashed #027524;
     background-color: white;
 
-    width: 300px;
-    height: 170px;
+    width: 250px;
+    height: 200px;
 
     font-family: 'ABeeZee', sans-serif;
 }
@@ -195,7 +199,7 @@ p {
 
 /* For media screen sizes 500px - 600px */
 @media screen and (min-width: 500px) {
-    h1{
+    h1 {
         font-size: 300%;
     }
 
@@ -215,7 +219,7 @@ p {
         margin-right: 10em;
     }
 
-    .time-match-container{
+    .time-match-container {
         font-size: 120%;
     }
 
@@ -227,7 +231,7 @@ p {
 
 }
 
-/* For media screen sizes 700px - 800px */
+/* For media screen sizes 700px - 1500px */
 @media screen and (min-width: 700px) {
     .game-container {
         height: 650px;
@@ -243,3 +247,53 @@ p {
     }
 }
 
+/* For media screen sizes 1500px - 2000px */
+@media screen and (min-width: 1500px) {
+    .instructions {
+        width: 500px;
+        height: 200px;
+    }
+
+    .game-container {
+        height: 750px;
+        width: 750px;
+    }
+
+    .time-match-container {
+        font-size: 140%;
+    }
+}
+
+/* For media screen sizes 2000px and up*/
+@media screen and (min-width: 2000px) {
+
+    .menu {
+
+        height: 400px;
+        width: 600px;
+    }
+
+    .btn {
+        font-size: 180%;
+    }
+
+    .instructions p {
+        margin: 15px;
+        font-size: 200%;
+    }
+
+    .instructions {
+        width: 700px;
+        height: 300px;
+    }
+
+    .time-match-container {
+        font-size: 200%;
+    }
+
+    .game-container {
+        height: 1000px;
+        width: 1000px;
+    }
+
+}
