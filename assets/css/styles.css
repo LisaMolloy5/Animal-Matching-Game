@@ -250,7 +250,7 @@ p {
     }
 }
 
-/* For screen sizes 600px wide and up */
+/* For screen sizes 600px - 800px */
 @media screen and (min-width: 600px) {
 
     h1 {
@@ -272,6 +272,28 @@ p {
     .game-container {
         height: 600px;
         width: 600px;
+    }
+}
+
+/* For screen sizes 800px -  */
+@media screen and (min-width: 800px) {
+
+    h1 {
+        font-size: 300%;
+    }
+
+    .instructions {
+        width: 400px;
+        height: 300px;
+    }
+
+    .game-container {
+        height: 670px;
+        width: 670px;
+    }
+
+    .btn {
+        font-size: 150%;
     }
 
 }
