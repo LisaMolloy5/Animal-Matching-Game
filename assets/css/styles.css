@@ -193,7 +193,7 @@ p {
 
 /* Media Queries */
 
-/* For media screen sizes 500px */
+/* For media screen sizes 500px - 600px */
 @media screen and (min-width: 500px) {
     h1{
         font-size: 300%;
@@ -226,3 +226,20 @@ p {
 
 
 }
+
+/* For media screen sizes 700px - 800px */
+@media screen and (min-width: 700px) {
+    .game-container {
+        height: 650px;
+        width: 650px;
+    }
+
+    .menu {
+        height: 300px;
+    }
+
+    .btn {
+        font-size: 150%;
+    }
+}
+
