@@ -123,9 +123,20 @@ This project was deployed to GitHub Pages. To deploy
 5. Click the 'source' dropdown named 'none' and change it to 'Master Branch.
 6. Click save.
 7. The page will refresh automatically with the successfully deployed website.
-![Deployment](assets/readme-images/deployment.png)
+![Deployment](readme/deployment.png)
 
-Link to the GitHub repository ['Animal Mathch'](https://github.com/LisaMolloy5/id-rather-be-at-pemberley)
+Link to the GitHub repository ['Animal Mathch'](https://github.com/LisaMolloy5/animal-matching-game)
+
+#### Make a local clone of the Repository
+
+1. Log in or join Github.
+2. Fnd the Github repository.
+3. Locate the 'Code' button dropdown and click it.
+4. Select 'HTTPS' to clone using HTTPS and copy the link or click the clipboard button.
+5. Open Git Bash.
+6. Replace the current working directory to the location you wish the cloned directory to be made.
+7. Type git clone, and paste the URL from copied in step 4.
+![Cloning](readme/cloning.png)
 
 ## Testing
 ***
@@ -133,6 +144,34 @@ Link to the GitHub repository ['Animal Mathch'](https://github.com/LisaMolloy5/i
 
 ## Credit
 ***
+### Code Used
+* [CSS gradient tutorial used](https://www.w3schools.com/css/css3_gradients.asp)
+
+* [Box Sahdow tutorial used](https://www.w3schools.com/css/css3_shadows_box.asp#:~:text=The%20CSS%20box-shadow%20property%20is%20used%20to%20apply,color%20of%20the%20shadow%20is%20the%20current%20text-color)
+
+* [Game tutorial followed.](https://www.youtube.com/watch?v=ZniVgo8U7ek)
+
+* [Creating a Simple Footer With Flexbox](https://www.codegrepper.com/code-examples/javascript/javascript+countdown+timer+minutes%2C+seconds)
+
+* [Code adapted for the timer function](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+* [Used for the safari backface visibilty bug](https://www.w3schools.com/CSSref/css3_pr_backface-visibility.asp)
+
+---
+
+## Content
+* All content was written by the developer.
+* All images were design by author using [Canva](https://www.canva.com/signup) free elements.
+
+## Acknowledgements
+* I would like to thank [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/) my mentor for his continuous help throughout my project.
+* I would like to thank my tutor Kasia Bogucka. 
+* I would also like to thank the Slack Community and tutor support for the feedback and help provided.
+
+2022 Lisa Molloy
+
+
+
 
 
 
