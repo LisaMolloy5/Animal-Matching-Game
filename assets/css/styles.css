@@ -90,6 +90,8 @@ h1 {
     display: flex;
     flex-wrap: wrap;
 
+    position: relative;
+
     justify-content: center;
 
     perspective: 1000px;
@@ -205,7 +207,6 @@ p {
     font-family: 'ABeeZee', sans-serif;
 }
 
-
 .instructions p {
 
     margin: 15px;
@@ -226,6 +227,33 @@ p {
 
     background-color: white;
 }
+
+.won, .lost {
+    margin-top: 200px;
+
+    text-align: center;
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+
+    width: 300px;
+    height: 350px;
+
+    font-family: 'ABeeZee', sans-serif;
+} 
+
+.won, .lost p {
+
+    margin: 15px;
+
+    font-size: 150%;
+}
+
+
 
 .hide {
     display: none;

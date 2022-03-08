@@ -1,8 +1,9 @@
 // Tutorial adapted and added to for this project - https://www.youtube.com/watch?v=ZniVgo8U7ek
 const cards = document.querySelectorAll('.card');
 const restart = document.getElementById('restart-btn')
-const howToPlay = document.getElementById('how-to')
-const gameIns = document.getElementById('instructions')
+const gameWin = document.getElementById('won')
+const gameLost = document.getElementById('lost')
+const closeBtn = document.getElementById('close')
 let matchesRef = document.getElementById('matches');
 let matches = 0
 let timeLeft = 120;
@@ -19,7 +20,9 @@ let timerRef = setInterval(function () {
         clearInterval(timerRef);
 
         // To alert the player they have ran out of timer
-        alert('You lost, click the reset button to try again!!')
+        setTimeout(() => {
+            gameLost.classList.remove('hide')
+        }, 500);
         lockGame = true
 
     }
@@ -69,10 +72,10 @@ function checkMatch() {
     if (Number(matchesRef.innerText) === 8) {
         clearInterval(timerRef)
 
-        
+
 
         setTimeout(() => {
-            gameIns.classList.remove('hide')
+            gameWin.classList.remove('hide')
         }, 500);
     }
 }
@@ -105,9 +108,15 @@ function init() {
     shuffle()
 }
 
+function gameWinAlert() {
+    gameWin.classList.add('hide')
+    gameLost.classList.add('hide')
+}
+
 
 init();
 
+closeBtn.addEventListener('click', gameWinAlert)
 
 document.getElementById("restart-btn").onclick = () => window.location.reload();
 
