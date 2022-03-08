@@ -29,7 +29,7 @@ body {
 
     width: 90%;
 
-    border: 8px dashed #027524;
+    border: 8px solid #027524;
     border-radius: 10px;
     padding: 2em;
 
@@ -44,6 +44,8 @@ body {
     margin-top: 50px;
 
     gap: 50px;
+
+    position: relative;
 }
 
 h1 {
@@ -78,17 +80,6 @@ h1 {
 
 
 /* Game Section*/
-
-.game-container1 {
-
-    height: 200px;
-    width: 500px;
-    max-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-}
 
 .game-container {
 
@@ -197,18 +188,19 @@ p {
 
 .instructions {
 
-    margin-top: 50px;
+    margin-top: 200px;
 
     text-align: center;
 
-    border: 5px dashed #027524;
     background-color: white;
 
     display: flex;
     flex-direction: column;
 
-    width: 250px;
-    height: 250px;
+    position: absolute;
+
+    width: 300px;
+    height: 350px;
 
     font-family: 'ABeeZee', sans-serif;
 }

@@ -1,8 +1,8 @@
 // Tutorial adapted and added to for this project - https://www.youtube.com/watch?v=ZniVgo8U7ek
-
 const cards = document.querySelectorAll('.card');
 const restart = document.getElementById('restart-btn')
 const howToPlay = document.getElementById('how-to')
+const gameIns = document.getElementById('instructions')
 let matchesRef = document.getElementById('matches');
 let matches = 0
 let timeLeft = 120;
@@ -67,8 +67,12 @@ function checkMatch() {
     // To alert the player they have won.
 
     if (Number(matchesRef.innerText) === 8) {
+        clearInterval(timerRef)
+
+        
+
         setTimeout(() => {
-            alert('CONGRATULATIONS YOU WON!!! CLICK RESTART TO PLAY AGAIN')
+            gameIns.classList.remove('hide')
         }, 500);
     }
 }
