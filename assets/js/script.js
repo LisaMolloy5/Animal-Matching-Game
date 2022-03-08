@@ -3,7 +3,6 @@ const cards = document.querySelectorAll('.card');
 const restart = document.getElementById('restart-btn')
 const gameWin = document.getElementById('won')
 const gameLost = document.getElementById('lost')
-const closeBtn = document.getElementById('close')
 let matchesRef = document.getElementById('matches');
 let matches = 0
 let timeLeft = 120;
@@ -19,7 +18,7 @@ let timerRef = setInterval(function () {
     if (timeLeft <= 0) {
         clearInterval(timerRef);
 
-        // To alert the player they have ran out of timer
+        // To alert the player they have ran out of time.
         setTimeout(() => {
             gameLost.classList.remove('hide')
         }, 500);
@@ -108,15 +107,7 @@ function init() {
     shuffle()
 }
 
-function gameWinAlert() {
-    gameWin.classList.add('hide')
-    gameLost.classList.add('hide')
-}
-
-
 init();
-
-closeBtn.addEventListener('click', gameWinAlert)
 
 document.getElementById("restart-btn").onclick = () => window.location.reload();
 
