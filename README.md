@@ -1,6 +1,6 @@
 # Animal Match
 A memory matching game for children. It hopes to provide a fun gaming experience with eyecatching images and entertaining game objectives.
-
+[Animal Match](https://lisamolloy5.github.io/animal-matching-game/)
 
 ## User Experience
 ***
@@ -30,6 +30,7 @@ The colour scheme of the website is various shades of greens. These were chosen 
 
 ### Images
 The images used on the website are of cartoon animals and a cartoon zookeeper to match the games zoo and animal rescue theme and appeal to children who are the target user for ther game.
+***
 <img src="assets/images/panda.jpg" width="150"> 
 <img src="assets/images/background.jpg" width="150"> 
 <img src="assets/images/zookeeper.jpg" width="150">
