@@ -4,7 +4,10 @@
 const cards = document.querySelectorAll('.card');
 const gameWin = document.getElementById('won');
 const gameLost = document.getElementById('lost');
+const backBtn = document.getElementById('back')
+const restartBtn = document.getElementById('restart-btn')
 let matchesRef = document.getElementById('matches');
+
 let matches = 0;
 let timeLeft = 120;
 let cardFlipped = false;
@@ -22,6 +25,8 @@ let timerRef = setInterval(function () {
         // To alert the player they have ran out of time.
         setTimeout(() => {
             gameLost.classList.remove('hide');
+            backBtn.classList.add('hide')
+            restartBtn.classList.add('hide')
         }, 500);
         lockGame = true;
 
@@ -41,6 +46,9 @@ function flipCards() {
         // First card clicked 
         cardFlipped = true;
         firstCard = this;
+
+        firstCard.removeEventListener('click', flipCards);
+        
     } else {
         // Second card clicked
         cardFlipped = false;
@@ -65,6 +73,9 @@ function checkMatch() {
 
     } else {
         unflipCards();
+        
+        firstCard.addEventListener('click', flipCards);
+        secondCard.addEventListener('click', flipCards);
     }
 
     // To alert the player they have won.
@@ -72,10 +83,14 @@ function checkMatch() {
     if (Number(matchesRef.innerText) === 8) {
         clearInterval(timerRef);
 
+        lockGame = true;
 
+        
 
         setTimeout(() => {
             gameWin.classList.remove('hide');
+            backBtn.classList.add('hide')
+            restartBtn.classList.add('hide')
         }, 500);
     }
 }

@@ -7,13 +7,15 @@
 }
 
 html {
-    height: 150vh;
-
-
+    height: 100vh;
 }
 
 /* CSS gradient tutorial -- https://www.w3schools.com/css/css3_gradients.asp*/
 body {
+
+    overflow: hidden;
+
+    max-height: 1000px;
 
     background-image: linear-gradient(#d3fee0, #03a734, #027524);
 
