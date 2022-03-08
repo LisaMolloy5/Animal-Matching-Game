@@ -140,6 +140,7 @@ h1 {
 }
 
 .back {
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
 
@@ -159,7 +160,7 @@ h1 {
     font-weight: 700;
     font-size: 100%;
 
-    background-color: white;
+    background-color: #ffffff;
 
     padding: .5em;
 
@@ -185,7 +186,7 @@ h1 {
 
 p {
     border: #027524;
-    background-color: white;
+    background-color: #ffffff;
 }
 
 .instructions {
@@ -194,7 +195,7 @@ p {
 
     text-align: center;
 
-    background-color: white;
+    background-color: #ffffff;
 
     display: flex;
     flex-direction: column;
@@ -225,7 +226,7 @@ p {
     font-weight: 700;
 
 
-    background-color: white;
+    background-color: #ffffff;
 }
 
 .won, .lost {
@@ -233,7 +234,7 @@ p {
 
     text-align: center;
 
-    background-color: white;
+    background-color: #ffffff;
 
     display: flex;
     flex-direction: column;
