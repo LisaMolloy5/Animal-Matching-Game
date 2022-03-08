@@ -1,10 +1,11 @@
+/* jshint esversion: 8 */
+
 // Tutorial adapted and added to for this project - https://www.youtube.com/watch?v=ZniVgo8U7ek
 const cards = document.querySelectorAll('.card');
-const restart = document.getElementById('restart-btn')
-const gameWin = document.getElementById('won')
-const gameLost = document.getElementById('lost')
+const gameWin = document.getElementById('won');
+const gameLost = document.getElementById('lost');
 let matchesRef = document.getElementById('matches');
-let matches = 0
+let matches = 0;
 let timeLeft = 120;
 let cardFlipped = false;
 let lockGame = false;
@@ -20,21 +21,21 @@ let timerRef = setInterval(function () {
 
         // To alert the player they have ran out of time.
         setTimeout(() => {
-            gameLost.classList.remove('hide')
+            gameLost.classList.remove('hide');
         }, 500);
-        lockGame = true
+        lockGame = true;
 
     }
     document.getElementById('timer').innerText = timeLeft;
     timeLeft--;
-}, 1000)
+}, 1000);
 
 
 // To flip game cards to reveal face
 function flipCards() {
     if (lockGame) return;
 
-    this.classList.toggle('flip')
+    this.classList.toggle('flip');
 
     if (!cardFlipped) {
         // First card clicked 
@@ -45,7 +46,7 @@ function flipCards() {
         cardFlipped = false;
         secondCard = this;
 
-        checkMatch()
+        checkMatch();
     }
 }
 
@@ -54,8 +55,8 @@ function checkMatch() {
     if (firstCard.dataset.name ===
         secondCard.dataset.name) {
 
-        firstCard.removeEventListener('click', flipCards)
-        secondCard.removeEventListener('click', flipCards)
+        firstCard.removeEventListener('click', flipCards);
+        secondCard.removeEventListener('click', flipCards);
 
         // To update the number of matches by 1 for each pair.
         matches++;
@@ -69,12 +70,12 @@ function checkMatch() {
     // To alert the player they have won.
 
     if (Number(matchesRef.innerText) === 8) {
-        clearInterval(timerRef)
+        clearInterval(timerRef);
 
 
 
         setTimeout(() => {
-            gameWin.classList.remove('hide')
+            gameWin.classList.remove('hide');
         }, 500);
     }
 }
@@ -87,8 +88,8 @@ function unflipCards() {
     lockGame = true;
 
     setTimeout(() => {
-        firstCard.classList.remove('flip')
-        secondCard.classList.remove('flip')
+        firstCard.classList.remove('flip');
+        secondCard.classList.remove('flip');
 
         lockGame = false;
     }, 1000);
@@ -99,16 +100,16 @@ function shuffle() {
     cards.forEach(card => {
         let randomize = Math.floor(Math.random() * 16);
         card.style.order = randomize;
-    })
-};
+    });
+}
 
 // To reset the game by reloading the page
 function init() {
-    shuffle()
+    shuffle();
 }
 
 init();
 
 document.getElementById("restart-btn").onclick = () => window.location.reload();
 
-cards.forEach(card => card.addEventListener('click', flipCards))
+cards.forEach(card => card.addEventListener('click', flipCards));

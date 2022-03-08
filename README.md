@@ -48,6 +48,8 @@ The images used on the website are of cartoon animals and a cartoon zookeeper to
 ## Deployment
 
 ## Testing
+***
+### Please find the informaton on testng the 'Animal Matching Game' website [HERE](TESTING.md).
 
 ## Creadit
 

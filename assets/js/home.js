@@ -1,17 +1,19 @@
-const howBtn = document.getElementById('how-btn')
-const gameIns = document.getElementById('instructions')
-const closeBtn = document.getElementById('close')
+/* jshint esversion: 8 */
+
+const howBtn = document.getElementById('how-btn');
+const gameIns = document.getElementById('instructions');
+const closeBtn = document.getElementById('close');
 
 
-howBtn.addEventListener('click', howToPlay)
-closeBtn.addEventListener('click', closeIns)
+howBtn.addEventListener('click', howToPlay);
+closeBtn.addEventListener('click', closeIns);
 
 function howToPlay() {
-  gameIns.classList.remove('hide')
+  gameIns.classList.remove('hide');
 }
 
 function closeIns() {
-    gameIns.classList.add('hide')
+    gameIns.classList.add('hide');
 }
 
 
