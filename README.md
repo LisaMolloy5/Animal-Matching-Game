@@ -15,7 +15,7 @@ A memory matching game for children. It hopes to provide a fun gaming experience
 
 ### Frequent User Goals
 * As a frequent visitor, I want to be able to restart the game to play again.
-* As a frequent visitor, I want to be able play the game with different matching variaties.
+* As a frequent visitor, I want to be able to play the game with different matching variaties.
 
 ## Design
 *** 
