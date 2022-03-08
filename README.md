@@ -40,25 +40,100 @@ The images used on the website are of cartoon animals and a cartoon zookeeper to
 
 ## Features
 ### Start Menu
+***
+* The game name 'Animal Match' sits at the top of the game menu.
+* A 'Start' button that brings the user to the game page and a 'How to play' button which opens the intructions pop up are contained within the menu.
+
+![Menu](readme/menu.png)
 
 ### Game Instructions
-### Timer
-### Matches
-### Game 
-### Won Alert 
-### Lost Alert
-### Restart
-### Future Features
+***
+* The game instructions are contained within a pop up when the 'How to play' button is clicked.
+* It provides the user with the background to the game and instructions on how to play the game.
 
-## Techonology Uase
+![Game Instructions](readme/intructions.png)
+
+### Timer
+***
+* A timer that is 120 seconds long and countsdown while the user plays the game.
+* When the timer reaches zero a pop up alerts the player they have lost.
+
+![Timer](readme/readme/timer.png)
+
+### Matches
+*** 
+* Displays the matches gotten to the user as they play through the game.
+* When the player reaches 8 matchs a pop up alerts the player that they have won.
+
+![Matches](readme/matches.png)
+
+### Game 
+***
+* The game consists of sixteen cards that can be flipped.
+* The aim of the game is to match each animal with it's pair before the time runs out.
+
+![Game](readme/game.png)
+
+### Won Alert 
+***
+* A pop up that slerts the player that they have won the game.
+* The quit button brings the player back to the home page.
+* The play again button restarts the game over again.
+
+![won alert](readme/win-alert.png)
+
+### Lost Alert
+***
+* A pop up that slerts the player that they have lost the game.
+* The quit button brings the player back to the home page.
+* The play again button restarts the game over again.
+
+![Lost alert](readme/lost-alert.png)
+
+### Back / Restart
+***
+* The back button brings the player back to the home page.
+* The restart button restarts the game over again.
+
+![Back-Restart](readme/restart-back.png)
+### Future Features
+*** 
+* With more time I would like to implement sounds into the game as well as different game modes.
+
+## Techonology Used
+***
+* [HTML5](https://en.wikipedia.org/wiki/HTML5) was the coding language used.
+* [CSS3](https://en.wikipedia.org/wiki/CSS) was the coding language used to style the website.
+* [Balsamiq](https://balsamiq.com/) was used to create the website wireframes.
+* [Tinyjpg](https://tinyjpg.com/) was used to compress images.
+* [Google Fonts](https://fonts.google.com/) was used for the fonts on the website.
+* [Canva](https://www.canva.com/signup) was used to create and style the site images.
+* [Gitpod](https://www.gitpod.io/) was used to write and edit the code.
+* [Github](https://github.com/) was used to host and deploy the website.
 
 ## Deployment
+***
+#### Github Deployment
+This project was deployed to GitHub Pages. To deploy 
+
+1. Log in or join GitHub.
+2. Find the GitHub Repository.
+3. Locate the setting part of thr Repository menu.
+4. Find the pages part of settings and click it.
+5. Click the 'source' dropdown named 'none' and change it to 'Master Branch.
+6. Click save.
+7. The page will refresh automatically with the successfully deployed website.
+![Deployment](assets/readme-images/deployment.png)
+
+Link to the GitHub repository ['Animal Mathch'](https://github.com/LisaMolloy5/id-rather-be-at-pemberley)
 
 ## Testing
 ***
 ### Please find the informaton on testng the 'Animal Matching Game' website [HERE](TESTING.md).
 
-## Creadit
+## Credit
+***
+
 
 
 

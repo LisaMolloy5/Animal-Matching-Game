@@ -126,6 +126,7 @@ function init() {
 init();
 
 document.getElementById("restart-btn").onclick = () => window.location.reload();
-document.getElementById("play-btn").onclick = () => window.location.reload();
+document.getElementById("play-btn1").onclick = () => window.location.reload();
+document.getElementById("play-btn2").onclick = () => window.location.reload();
 
 cards.forEach(card => card.addEventListener('click', flipCards));

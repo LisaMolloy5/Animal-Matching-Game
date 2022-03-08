@@ -261,12 +261,11 @@ p {
     font-family: 'ABeeZee', sans-serif;
 }
 
-.won,
+.won p,
 .lost p {
 
-    margin: 15px;
-
-    font-size: 150%;
+    margin-top: 10px;
+    font-size: 120%;
 }
 
 .alerts {
