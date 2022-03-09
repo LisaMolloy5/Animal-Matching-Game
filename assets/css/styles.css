@@ -5,6 +5,8 @@
     padding: 0;
     margin: 0;
 
+    -webkit-box-sizing: border-box;
+
     box-sizing: border-box;
 }
 
@@ -19,12 +21,29 @@ body {
 
     max-height: 1000px;
 
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#d3fee0), color-stop(#03a734), to(#027524));
+
+    background-image: -o-linear-gradient(#d3fee0, #03a734, #027524);
+
     background-image: linear-gradient(#d3fee0, #03a734, #027524);
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 
+    -webkit-box-pack: center;
+
+    -ms-flex-pack: center;
+
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -39,10 +58,23 @@ body {
 
     text-align: center;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 
+    -webkit-box-pack: center;
+
+    -ms-flex-pack: center;
+
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 
     margin-top: 50px;
@@ -109,7 +141,14 @@ p {
 
     background-color: #ffffff;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 
     position: absolute;
@@ -163,22 +202,22 @@ p {
 
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 
     position: relative;
 
     -webkit-box-pack: center;
 
-        -ms-flex-pack: center;
+    -ms-flex-pack: center;
 
-            justify-content: center;
+    justify-content: center;
 
     -webkit-perspective: 1000px;
     perspective: 1000px;
 
 }
 
-/* Box Sahdow tutorial -- https://www.w3schools.com/css/css3_shadows_box.asp#:~:text=The%20CSS%20box-shadow%20property%20is%20used%20to%20apply,color%20of%20the%20shadow%20is%20the%20current%20text-color.*/
+/* Box Shadow tutorial -- https://www.w3schools.com/css/css3_shadows_box.asp#:~:text=The%20CSS%20box-shadow%20property%20is%20used%20to%20apply,color%20of%20the%20shadow%20is%20the%20current%20text-color.*/
 
 .card {
 
@@ -187,7 +226,7 @@ p {
 
     -webkit-box-shadow: 0 4px 8px 0 #027524;
 
-            box-shadow: 0 4px 8px 0 #027524;
+    box-shadow: 0 4px 8px 0 #027524;
 
     margin: 3px;
 
@@ -195,11 +234,11 @@ p {
 
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
-        transform: scale(1);
+    transform: scale(1);
 
     -webkit-transform: scale(1);
     -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
+    transform-style: preserve-3d;
     -webkit-transform: scale(1);
     -webkit-transition: -webkit-transform .5s;
     transition: -webkit-transform .5s;
@@ -212,7 +251,7 @@ p {
 .card:active {
     -webkit-transform: scale(.90);
     -ms-transform: scale(.90);
-        transform: scale(.90);
+    transform: scale(.90);
     -webkit-transition: transform .2s;
     -webkit-transition: -webkit-transform .2s;
     transition: -webkit-transform .2s;
@@ -252,8 +291,8 @@ p {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
 
     gap: 6em;
 }
@@ -284,7 +323,7 @@ p {
 
     border: 5px solid #14fb5a;
     border-radius: 10px;
-    
+
     background-color: #ffffff;
 
     display: flex;
@@ -506,14 +545,16 @@ p {
         font-size: 50%;
     }
 
-    .lost, .won {
+    .lost,
+    .won {
         margin-top: 0;
 
         width: 300px;
         height: 230px;
     }
 
-    .lost p, .won p {
+    .lost p,
+    .won p {
         font-size: 80%;
     }
 
@@ -524,7 +565,7 @@ p {
 
 /* For screen sizes min height 400px and in landscape */
 @media screen and (min-height: 400px) and (orientation: landscape) {
-    
+
     .game-container {
         height: 250px;
         width: 250px;
@@ -533,7 +574,7 @@ p {
 
 /* For screen sizes min height 500px and in landscape */
 @media screen and (min-height: 500px) and (orientation: landscape) {
-    
+
     h1 {
         font-size: 150%;
     }
@@ -559,7 +600,7 @@ p {
 
 /* For screen sizes min height 600px and in landscape */
 @media screen and (min-height: 600px) and (orientation: landscape) {
-    
+
     h1 {
         font-size: 150%;
     }
