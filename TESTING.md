@@ -97,5 +97,22 @@ The 'Animal Matching Game' website was tested thoroughly. All code was ran thoug
 
 ### Lighthouse Testing
 
+## Home page
 
+### Mobile
 
+* ![home mobile lighthouse]](![mobile lighthouse testing](readme/mobile-lighthouse.png))
+
+### Desktop
+ 
+* ![home desktop lighthouse]](![desktop lighthouse testing](readme/desktop-lighthouse.png))
+
+## Game page
+
+### Mobile
+
+* ![game mobile lighthouse]](![mobile lighthouse testing](readme/game-mobile-lighthouse.png))
+
+### Desktop
+ 
+* ![game desktop lighthouse]](![desktop lighthouse testing](readme/game-desktop-lighthouse.png))
