@@ -485,7 +485,7 @@ p {
     }
 }
 
-/* For screen sizes min height 280px and in landscape */
+/* For screen sizes min height 400px and in landscape */
 @media screen and (min-height: 400px) and (orientation: landscape) {
     
     .game-container {

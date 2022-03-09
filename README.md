@@ -4,6 +4,8 @@ A memory matching game for children. It hopes to provide a fun gaming experience
 
 [Animal Match](https://lisamolloy5.github.io/animal-matching-game/)
 
+![screen view](readme/responsive.png)
+
 ## User Experience
 ***
 
@@ -33,12 +35,10 @@ The colour scheme of the website is various shades of greens. These were chosen 
 ### Images
 The images used on the website are of cartoon animals and a cartoon zookeeper to match the games zoo and animal rescue theme and appeal to children who are the target user for ther game.
 ***
-<img src="assets/images/panda.jpg" width="150"> 
-<img src="assets/images/background.jpg" width="150"> 
-<img src="assets/images/zookeeper.jpg" width="150">
+<img src="assets/images/panda.jpg" width="150"> <img src="assets/images/background.jpg" width="150"> <img src="assets/images/zookeeper.jpg" width="150">
 
 ### Wireframes
-![wirefrmaes](readme/wireframes.jpg)
+![wireframes](readme/wireframes.jpg)
 
 ## Features
 ### Start Menu
@@ -60,7 +60,7 @@ The images used on the website are of cartoon animals and a cartoon zookeeper to
 * A timer that is 120 seconds long and countsdown while the user plays the game.
 * When the timer reaches zero a pop up alerts the player they have lost.
 
-![Timer](readme/readme/timer.png)
+![Timer](readme/timer.png)
 
 ### Matches
 *** 
