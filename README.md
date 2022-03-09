@@ -153,6 +153,8 @@ Link to the GitHub repository ['Animal Mathch'](https://github.com/LisaMolloy5/a
 
 * [Game tutorial followed.](https://www.youtube.com/watch?v=ZniVgo8U7ek)
 
+* [Game tutorial followed.](https://www.youtube.com/watch?v=-tlb4tv4mC4)
+
 * [Creating a Simple Footer With Flexbox](https://www.codegrepper.com/code-examples/javascript/javascript+countdown+timer+minutes%2C+seconds)
 
 * [Code adapted for the timer function](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)

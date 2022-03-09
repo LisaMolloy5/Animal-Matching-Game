@@ -1,6 +1,6 @@
 /* jshint esversion: 8 */
 
-// Tutorial adapted and added to for this project - https://www.youtube.com/watch?v=ZniVgo8U7ek
+// Tutorials adapted and added to for this project - https://www.youtube.com/watch?v=ZniVgo8U7ek , https://www.youtube.com/watch?v=-tlb4tv4mC4 
 const cards = document.querySelectorAll('.card');
 const gameWin = document.getElementById('won');
 const gameLost = document.getElementById('lost');
@@ -110,7 +110,7 @@ function unflipCards() {
         secondCard.classList.remove('flip');
 
         lockGame = false;
-    }, 1000);
+    }, 1500);
 }
 
 // To randomize the placement of the cards
