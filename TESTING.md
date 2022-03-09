@@ -79,40 +79,49 @@ The 'Animal Matching Game' website was tested thoroughly. All code was ran thoug
   
 ### Validation Bugs
 ***
-- There was a parese error within my CSS media queries which was easily rectified.
+- There was a parse error within my CSS media queries which was easily rectified.
 
-![CSS bug](![css validation bug](readme/bugs/cssbug.png))
+[css validation bug](readme/bugs/cssbug.png)
 
 - There was a error with my lockGame function within my JavaScript. I had wrote it as a variable. Once i had removed the let variable command it was fixed.
 
-![JavaScript bug](![JavaScript valiadtion bug](readme/bugs/js-validation-bug.png))
+[JavaScript valiadtion bug](readme/bugs/js-validation-bug.png)
+
+***
 
 ### Functionality Bugs
+***
+## Doub click bug
 
-![CSS bug](![css validation bug](readme/bugs/cssbug.png))
+* When playing the game when one card was clicked twice it was displaying as a match.
+* The card was then unclickable when it was unflipped.
 
-![CSS bug](![css validation bug](readme/bugs/cssbug.png))
+<img src="readme/bugs/doubleclickbug.png" width="700" height="300px">
 
-![CSS bug](![css validation bug](readme/bugs/cssbug.png))
+* This was rectified by removing the event listener when the first card was clicked.
+
+![css validation bug](readme/bugs/firstclickfix.png)
+
+
 
 ### Lighthouse Testing
-
+- This website was tested using the [Google Lighthouse](https://developers.google.com/web/tools/lighthouse/) feature.
 ## Home page
 
 ### Mobile
 
-* ![home mobile lighthouse]](![mobile lighthouse testing](readme/mobile-lighthouse.png))
+* ![mobile lighthouse testing](readme/mobile-lighthouse.png)
 
 ### Desktop
  
-* ![home desktop lighthouse]](![desktop lighthouse testing](readme/desktop-lighthouse.png))
+* ![desktop lighthouse testing](readme/desktop-lighthouse.png)
 
 ## Game page
 
 ### Mobile
 
-* ![game mobile lighthouse]](![mobile lighthouse testing](readme/game-mobile-lighthouse.png))
+* ![mobile lighthouse testing](readme/game-mobile-lighthouse.png)
 
 ### Desktop
  
-* ![game desktop lighthouse]](![desktop lighthouse testing](readme/game-desktop-lighthouse.png))
+* ![desktop lighthouse testing](readme/game-desktop-lighthouse.png))
