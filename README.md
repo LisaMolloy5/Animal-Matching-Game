@@ -166,6 +166,7 @@ Link to the GitHub repository ['Animal Mathch'](https://github.com/LisaMolloy5/a
 ## Content
 * All content was written by the developer.
 * All images were designed by author using [Canva](https://www.canva.com/signup) free elements.
+* Favicon image was from Pixabay user [nekomachines](https://pixabay.com/users/nekomachines-19125993/).
 
 ## Acknowledgements
 * I would like to thank [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/) my mentor for his continuous help throughout my project.
