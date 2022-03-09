@@ -14,7 +14,7 @@ A memory matching game for children. It hopes to provide a fun gaming experience
 * As a first time visitor, I want to easily navigate to the game page.
 
 ### Returning Visitor Goals
-* As a returning visitor, I want to play interactively with them game.
+* As a returning visitor, I want to play interactively with the game.
 * As a returning visitor, I want to be told when I have won and lost.
 
 ### Frequent User Goals

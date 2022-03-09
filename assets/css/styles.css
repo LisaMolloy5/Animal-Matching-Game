@@ -215,8 +215,8 @@ p {
 
     justify-content: center;
 
-    -webkit-perspective: 1000px;
-    perspective: 1000px;
+    -webkit-perspective: 800px;
+    perspective: 800px;
 
 }
 
@@ -243,24 +243,11 @@ p {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     -webkit-transform: scale(1);
-    -webkit-transition: -webkit-transform .5s;
-    transition: -webkit-transform .5s;
-    -o-transition: transform .5s;
-    transition: transform .5s;
-    transition: transform .5s, -webkit-transform .5s;
-}
-
-
-.card:active {
-    -webkit-transform: scale(.90);
-    -ms-transform: scale(.90);
-    transform: scale(.90);
-    -webkit-transition: transform .2s;
-    -webkit-transition: -webkit-transform .2s;
-    transition: -webkit-transform .2s;
-    -o-transition: transform .2s;
-    transition: transform .2s;
-    transition: transform .2s, -webkit-transform .2s;
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    -o-transition: transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
 }
 
 .card.flip {
@@ -283,12 +270,6 @@ p {
 .back {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-
-    -webkit-transform: translateY(1px);
-
-    -ms-transform: translateY(1px);
-
-    transform: translateY(1px);
 }
 
 /* Styling for the website buttons*/
