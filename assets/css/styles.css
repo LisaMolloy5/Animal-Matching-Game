@@ -1,6 +1,9 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Fuzzy+Bubbles&display=swap');
 
+/* URL on where to add prefixes -- https://autoprefixer.github.io/ /*
+
+/* Global Styles */
 * {
     padding: 0;
     margin: 0;
@@ -527,7 +530,7 @@ p {
 }
 
 /* For screen sizes min height 280px and in landscape */
-@media screen and (min-height: 280px) and (orientation: landscape) {
+@media screen and (min-height: 280px) and (max-height: 400px) and (orientation: landscape) {
     h1 {
         font-size: 100%;
     }
@@ -561,65 +564,44 @@ p {
     .menu {
         margin-top: 10px;
     }
-}
 
-/* For screen sizes min height 400px and in landscape */
-@media screen and (min-height: 400px) and (orientation: landscape) {
+    .instructions {
+        margin-top: 120px;
+    }
 
-    .game-container {
-        height: 250px;
-        width: 250px;
+    .instructions p {
+        font-size: 70%;
     }
 }
 
-/* For screen sizes min height 500px and in landscape */
-@media screen and (min-height: 500px) and (orientation: landscape) {
+@media screen and (min-height: 400px) and (max-height: 600px) and (orientation: landscape) {
 
     h1 {
         font-size: 150%;
     }
 
-
     .game-container {
-        height: 350px;
-        width: 350px;
-    }
-
-    .time-match-container {
-        font-size: 130%;
+        height: 250px;
+        width: 300px;
     }
 
     .btn {
         font-size: 100%;
     }
 
-    .menu {
-        margin-top: 30px;
-    }
 }
 
-/* For screen sizes min height 600px and in landscape */
-@media screen and (min-height: 600px) and (orientation: landscape) {
 
-    h1 {
-        font-size: 150%;
-    }
-
+@media screen and (min-height: 600px) and (max-height: 900px) and (orientation: landscape) {
 
     .game-container {
         height: 400px;
         width: 400px;
     }
 
-    .time-match-container {
-        font-size: 150%;
-    }
-
     .btn {
-        font-size: 120%;
+        font-size: 100%;
     }
 
-    .menu {
-        margin-top: 40px;
-    }
 }
+
