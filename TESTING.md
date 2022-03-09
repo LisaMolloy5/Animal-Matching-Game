@@ -152,6 +152,8 @@ While testing the responsive design of the website some bugs were encountered. T
 
 ## Safari 
 
+### Card face issue
+
 * There was an issue with card visibiltiy in the safari browser. 
 * This was rectified using safari web-kits.
 
@@ -159,7 +161,10 @@ While testing the responsive design of the website some bugs were encountered. T
 
 * This was rectified using safari web-kits.
 
+### Unfixable bug
 
+* On safari and iOS systems a glitch was found that reveals a small parts of some cards when a game card is clicked. 
+* Prefixes were used to try and rectify this issue as suggested by tutor support, as well as suggestions found from stack overflow but utimately there was no solution to this bug.
 
 ### Lighthouse Testing
 - This website was tested using the [Google Lighthouse](https://developers.google.com/web/tools/lighthouse/) feature.
