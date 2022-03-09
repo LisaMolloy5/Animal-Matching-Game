@@ -94,16 +94,16 @@ The 'Animal Matching Game' website was tested thoroughly. All code was ran thoug
 While testing the responsive design of the website some bugs were encountered. These were fixed using media queries.
 
 * The game website heading was too large for smaller mobiler screens.
-![css validation bug](readme/bugs/galaxyfold.jpg)
+![galaxy fold issue](readme/bugs/galaxyfold.jpg)
 
 * The instructions were askew on mobile devices.
-![css validation bug](readme/bugs/instructions.jpg)
+![instructions issue](readme/bugs/instructions.jpg)
 
-* The game container was too small on tbalet, ipad and desktop screens.
-![css validation bug](readme/bugs/ipad.jpg) 
+* The game container was too small on tablet, ipad and desktop screens.
+![ipad issues](readme/bugs/ipad.jpg) 
 
 * The game was too large and unplayable in landscape orientation.
-![css validation bug](readme/bugs/landscape.jpg)
+![landscape issue](readme/bugs/landscape.jpg)
 ***
 
 ### Functionality Bugs
@@ -152,7 +152,12 @@ While testing the responsive design of the website some bugs were encountered. T
 
 ## Safari 
 
-* Theres 
+* There was an issue with card visibiltiy in the safari browser. 
+* This was rectified using safari web-kits.
+
+![safari bug](readme/bugs/safaribug.png)
+
+* This was rectified using safari web-kits.
 
 
 
