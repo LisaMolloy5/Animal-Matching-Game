@@ -81,17 +81,57 @@ The 'Animal Matching Game' website was tested thoroughly. All code was ran thoug
 ***
 - There was a parse error within my CSS media queries which was easily rectified.
 
-[css validation bug](readme/bugs/cssbug.png)
+![css validation bug](readme/bugs/cssbug.png)
 
 - There was a error with my lockGame function within my JavaScript. I had wrote it as a variable. Once i had removed the let variable command it was fixed.
 
-[JavaScript valiadtion bug](readme/bugs/js-validation-bug.png)
+![JavaScript valiadtion bug](readme/bugs/js-validation-bug.png)
 
+***
+
+### Responsive Bugs
+---
+While testing the responsive design of the website some bugs were encountered. These were fixed using media queries.
+
+* The game website heading was too large for smaller mobiler screens.
+![css validation bug](readme/bugs/galaxyfold.jpg)
+
+* The instructions were askew on mobile devices.
+![css validation bug](readme/bugs/instructions.jpg)
+
+* The game container was too small on tbalet, ipad and desktop screens.
+![css validation bug](readme/bugs/ipad.jpg) 
+
+* The game was too large and unplayable in landscape orientation.
+![css validation bug](readme/bugs/landscape.jpg)
 ***
 
 ### Functionality Bugs
 ***
-## Doub click bug
+## Three cards clicked bug
+
+* When playing the game i noticed three cards could be clicked at the one time.
+* This caused an error in the game and left some cards unflipped, while others remained flipped.
+
+![three click bug](readme/bugs/threeclickbug.png)
+
+* This was rectified by adding a lockGame variable that lasts for a second.
+* Once two cards have been unflipped then the user can click more cards.
+
+## Matches bug
+
+* Issues with matches occured during the game development.
+* When all the matches had been found and the 'Matches Feature" had reached eight,I had an issue with getting the game won alert to pop up.
+
+![matches bug](readme/bugs/matchesbug.png)
+
+* This was due to having reassigned the matches variable to 0.
+* I created serperate variables for the matches span and the number withing the matches.
+
+![matches fix](readme/bugs/matchesfix.png)
+
+
+## Double click bug
 
 * When playing the game when one card was clicked twice it was displaying as a match.
 * The card was then unclickable when it was unflipped.
@@ -100,7 +140,19 @@ The 'Animal Matching Game' website was tested thoroughly. All code was ran thoug
 
 * This was rectified by removing the event listener when the first card was clicked.
 
-![css validation bug](readme/bugs/firstclickfix.png)
+![double click bug](readme/bugs/firstclickfix.png)
+
+## Unflipped cards bug
+
+* Having fixed the double click bug, this created its own bug.
+* Once the event listener was removed from the first card clicked, once the cards unflipped , the card remained unclickable.
+* This was rectified by adding the event listener back to the cards once they were unflipped.
+
+![unflip bug](readme/bugs/unflipbug.png)
+
+## Safari 
+
+* Theres 
 
 
 

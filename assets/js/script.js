@@ -7,7 +7,6 @@ const gameLost = document.getElementById('lost');
 const backBtn = document.getElementById('back');
 const restartBtn = document.getElementById('restart-btn');
 let matchesRef = document.getElementById('matches');
-
 let matches = 0;
 let timeLeft = 120;
 let cardFlipped = false;
