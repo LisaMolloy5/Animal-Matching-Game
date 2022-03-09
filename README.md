@@ -15,7 +15,7 @@ A memory matching game for children. It hopes to provide a fun gaming experience
 
 ### Returning Visitor Goals
 * As a returning visitor, I want to play interactively with them game.
-* As a returning visitor, I want to be told when i have won and lost.
+* As a returning visitor, I want to be told when I have won and lost.
 
 ### Frequent User Goals
 * As a frequent visitor, I want to be able to restart the game to play again.
@@ -29,11 +29,11 @@ The colour scheme of the website is various shades of greens. These were chosen 
 ![colours](readme/colours.png)
 
 ### Typography
-'Fuzzy Bubbles' was the chosen as the title font for this game as it is eye catching and fun to match the game.
-'ABeeZee' was the chosen font for this game as it is a children's learning font and is friendly and easy to read. 'Sans Serif' was used as the fallback font for the website in case the other fonts do not load properly.
+* 'Fuzzy Bubbles' was chosen as the title font for this game as it is eye catching and fun to match the game.
+* 'ABeeZee' was the chosen body font for this game as it is a children's learning font and is friendly and easy to read. 'Sans Serif' was used as the fallback font for the website in case the other fonts do not load properly.
 
 ### Images
-The images used on the website are of cartoon animals and a cartoon zookeeper to match the games zoo and animal rescue theme and appeal to children who are the target user for ther game.
+The images used on the website are of cartoon animals and a cartoon zookeeper to match the games zoo and animal rescue theme and appeal to children who are the target user for the game.
 ***
 <img src="assets/images/panda.jpg" width="150"> <img src="assets/images/background.jpg" width="150"> <img src="assets/images/zookeeper.jpg" width="150">
 
@@ -78,7 +78,7 @@ The images used on the website are of cartoon animals and a cartoon zookeeper to
 
 ### Won Alert 
 ***
-* A pop up that slerts the player that they have won the game.
+* A pop up that alerts the player that they have won the game.
 * The quit button brings the player back to the home page.
 * The play again button restarts the game over again.
 
@@ -86,7 +86,7 @@ The images used on the website are of cartoon animals and a cartoon zookeeper to
 
 ### Lost Alert
 ***
-* A pop up that slerts the player that they have lost the game.
+* A pop up that alerts the player that they have lost the game.
 * The quit button brings the player back to the home page.
 * The play again button restarts the game over again.
 
@@ -163,7 +163,7 @@ Link to the GitHub repository ['Animal Mathch'](https://github.com/LisaMolloy5/a
 
 ## Content
 * All content was written by the developer.
-* All images were design by author using [Canva](https://www.canva.com/signup) free elements.
+* All images were designed by author using [Canva](https://www.canva.com/signup) free elements.
 
 ## Acknowledgements
 * I would like to thank [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/) my mentor for his continuous help throughout my project.

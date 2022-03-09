@@ -30,7 +30,7 @@ The 'Animal Matching Game' website was tested thoroughly. All code was ran thoug
 ### First Time Visitor Goals
 * As a first time visitor, I want to easily understand how to play the game.
  1. On entering the game the user is greeted with a menu consisting of a 'Start' button and a 'How to play' button.
- 2. When clicked the 'How to play' displays a pop up giving a storie to the game and instructions on how to play"
+ 2. When clicked the 'How to play' button displays a pop up giving a background story to the game and instructions on how to play"
 
 * As a first time visitor, I want to easily navigate to the game page.
  1.  On entering the game the user is greeted with a menu consisting of a 'Start' button and a 'How to play' button.
@@ -51,8 +51,8 @@ The 'Animal Matching Game' website was tested thoroughly. All code was ran thoug
 ### Frequent User Goals
 
 * As a frequent visitor, I want to be able to restart the game to play again.
- 1. Beneathe the game container there are two clickable button. On to return to the home page and one to restart the game.
- 2. The 'Won' and 'Lost' pop up displays also containe a 'Quit' and a 'Play again' btn allowing the user to play again if they wish.
+ 1. Beneathe the game container there are two clickable buttons. On to return to the home page and one to restart the game.
+ 2. The 'Won' and 'Lost' pop up displays also contain a 'Quit' and a 'Play again' button allowing the user to play again if they wish.
 
 * As a frequent visitor, I want to be able to play the game with different matching variaties.
  1. The shuffle function within the game allows the cards to be randomized when the game has loaded.
@@ -65,7 +65,7 @@ The 'Animal Matching Game' website was tested thoroughly. All code was ran thoug
 
 * The website was checked on various devices such as Galaxy Fold, Iphone 5/SE, Iphone X, Samsung Galay S8+, Nokia N9, Ipad, Galaxy Tab, Laptop and Desktop.
 
-* The game website was checked on all devices and orientations to check that all aspects of the game where withing the screen and not too small or too large.
+* The game website was checked on all devices and orientations to check that all aspects of the game where within the screen and not too small or too large.
 
 * Any issues that were shown, such as the website heading being to large on smaller mobile screens, the game being to large in landscape oreintation and the game being too small for larger screens, were fixed using media queries.
 
@@ -79,11 +79,11 @@ The 'Animal Matching Game' website was tested thoroughly. All code was ran thoug
   
 ### Validation Bugs
 ***
-- There was a parse error within my CSS media queries which was easily rectified.
+- There was a parse error within the CSS media queries which was easily rectified.
 
 ![css validation bug](readme/bugs/cssbug.png)
 
-- There was a error with my lockGame function within my JavaScript. I had wrote it as a variable. Once i had removed the let variable command it was fixed.
+- There was an error with my lockGame function within my JavaScript. I had wrote it as a variable. Once i had removed the let variable command it was fixed.
 
 ![JavaScript valiadtion bug](readme/bugs/js-validation-bug.png)
 
@@ -126,7 +126,7 @@ While testing the responsive design of the website some bugs were encountered. T
 ![matches bug](readme/bugs/matchesbug.png)
 
 * This was due to having reassigned the matches variable to 0.
-* I created serperate variables for the matches span and the number withing the matches.
+* I created serperate variables for the matches span and the number within the matches.
 
 ![matches fix](readme/bugs/matchesfix.png)
 
@@ -181,4 +181,4 @@ While testing the responsive design of the website some bugs were encountered. T
 
 ### Desktop
  
-* ![desktop lighthouse testing](readme/game-desktop-lighthouse.png))
+* ![desktop lighthouse testing](readme/game-desktop-lighthouse.png)
