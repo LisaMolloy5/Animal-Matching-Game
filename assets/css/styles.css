@@ -450,7 +450,7 @@ p {
 
 }
 
-/* For screen sizes 2000px and up */
+/* For screen sizes min height 280px and in landscape */
 @media screen and (min-height: 280px) and (orientation: landscape) {
     h1 {
         font-size: 100%;
@@ -463,5 +463,85 @@ p {
     .game-container {
         height: 150px;
         width: 200px;
+    }
+
+    .btn {
+        font-size: 50%;
+    }
+
+    .lost, .won {
+        margin-top: 0;
+
+        width: 300px;
+        height: 230px;
+    }
+
+    .lost p, .won p {
+        font-size: 80%;
+    }
+
+    .menu {
+        margin-top: 10px;
+    }
+}
+
+/* For screen sizes min height 280px and in landscape */
+@media screen and (min-height: 400px) and (orientation: landscape) {
+    
+    .game-container {
+        height: 250px;
+        width: 250px;
+    }
+}
+
+/* For screen sizes min height 500px and in landscape */
+@media screen and (min-height: 500px) and (orientation: landscape) {
+    
+    h1 {
+        font-size: 150%;
+    }
+
+
+    .game-container {
+        height: 350px;
+        width: 350px;
+    }
+
+    .time-match-container {
+        font-size: 130%;
+    }
+
+    .btn {
+        font-size: 100%;
+    }
+
+    .menu {
+        margin-top: 30px;
+    }
+}
+
+/* For screen sizes min height 600px and in landscape */
+@media screen and (min-height: 600px) and (orientation: landscape) {
+    
+    h1 {
+        font-size: 150%;
+    }
+
+
+    .game-container {
+        height: 400px;
+        width: 400px;
+    }
+
+    .time-match-container {
+        font-size: 150%;
+    }
+
+    .btn {
+        font-size: 120%;
+    }
+
+    .menu {
+        margin-top: 40px;
     }
 }
