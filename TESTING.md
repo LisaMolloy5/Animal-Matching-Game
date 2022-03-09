@@ -69,8 +69,33 @@ The 'Animal Matching Game' website was tested thoroughly. All code was ran thoug
 
 * Any issues that were shown, such as the website heading being to large on smaller mobile screens, the game being to large in landscape oreintation and the game being too small for larger screens, were fixed using media queries.
 
- # Browser Compatibility Testing 
+# Browser Compatibility Testing 
+
+* This Website was tested on the browsers Google Chrome, Safari, Microsoft Edge and Mozilla Firefox.
+* The functionality of each page of the game website was checked to make sure they worked.
+* The appearance of the website was checked on each browser to make sure nothing was out of place.
+
+# Known Bugs
   
-  * This Website was tested on the browsers Google Chrome, Safari, Microsoft Edge and Mozilla Firefox.
-  * The functionality of each page of the game website was checked to make sure they worked.
-  * The appearance of the website was checked on each browser to make sure nothing was out of place.
+### Validation Bugs
+***
+- There was a parese error within my CSS media queries which was easily rectified.
+
+![CSS bug](![css validation bug](readme/bugs/cssbug.png))
+
+- There was a error with my lockGame function within my JavaScript. I had wrote it as a variable. Once i had removed the let variable command it was fixed.
+
+![JavaScript bug](![JavaScript valiadtion bug](readme/bugs/js-validation-bug.png))
+
+### Functionality Bugs
+
+![CSS bug](![css validation bug](readme/bugs/cssbug.png))
+
+![CSS bug](![css validation bug](readme/bugs/cssbug.png))
+
+![CSS bug](![css validation bug](readme/bugs/cssbug.png))
+
+### Lighthouse Testing
+
+
+

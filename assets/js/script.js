@@ -4,8 +4,8 @@
 const cards = document.querySelectorAll('.card');
 const gameWin = document.getElementById('won');
 const gameLost = document.getElementById('lost');
-const backBtn = document.getElementById('back')
-const restartBtn = document.getElementById('restart-btn')
+const backBtn = document.getElementById('back');
+const restartBtn = document.getElementById('restart-btn');
 let matchesRef = document.getElementById('matches');
 
 let matches = 0;
@@ -21,14 +21,16 @@ let firstCard, secondCard;
 let timerRef = setInterval(function () {
     if (timeLeft <= 0) {
         clearInterval(timerRef);
+        lockGame = true;
+
 
         // To alert the player they have ran out of time.
         setTimeout(() => {
             gameLost.classList.remove('hide');
-            backBtn.classList.add('hide')
-            restartBtn.classList.add('hide')
+            backBtn.classList.add('hide');
+            restartBtn.classList.add('hide');
         }, 500);
-        let lockGame = true;
+
 
     }
     document.getElementById('timer').innerText = timeLeft;
@@ -91,8 +93,8 @@ function checkMatch() {
 
         setTimeout(() => {
             gameWin.classList.remove('hide');
-            backBtn.classList.add('hide')
-            restartBtn.classList.add('hide')
+            backBtn.classList.add('hide');
+            restartBtn.classList.add('hide');
         }, 500);
     }
 }
