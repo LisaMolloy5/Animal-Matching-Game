@@ -517,7 +517,7 @@ p {
 }
 
 /* For screen sizes min height 280px and in landscape */
-@media screen and (min-height: 280px) and (max-height: 400px) and (orientation: landscape) {
+@media screen and (min-device-height: 280px) and (max-device-height: 400px) and (orientation: landscape) {
     h1 {
         font-size: 100%;
     }
@@ -561,7 +561,7 @@ p {
     }
 }
 
-@media screen and (min-height: 400px) and (max-height: 600px) and (orientation: landscape) {
+@media screen and (min-device-height: 400px) and (max-device-height: 600px) and (orientation: landscape) {
 
     h1 {
         font-size: 150%;
@@ -579,7 +579,7 @@ p {
 }
 
 
-@media screen and (min-height: 600px) and (max-height: 900px) and (orientation: landscape) {
+@media screen and (min-device-height: 600px) and (max-device-height: 900px) and (orientation: landscape) {
 
     .game-container {
         height: 400px;
