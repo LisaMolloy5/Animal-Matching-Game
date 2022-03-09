@@ -157,12 +157,21 @@ p {
     width: 350px;
     max-width: 100%;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 
     position: relative;
 
-    justify-content: center;
+    -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
+            justify-content: center;
 
     -webkit-perspective: 1000px;
     perspective: 1000px;
@@ -176,27 +185,40 @@ p {
     width: 20%;
     height: 20%;
 
-    box-shadow: 0 4px 8px 0 #027524;
+    -webkit-box-shadow: 0 4px 8px 0 #027524;
+
+            box-shadow: 0 4px 8px 0 #027524;
 
     margin: 3px;
 
     position: relative;
 
     -webkit-transform: scale(1);
-    transform: scale(1);
+    -ms-transform: scale(1);
+        transform: scale(1);
 
     -webkit-transform: scale(1);
-    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
     -webkit-transform: scale(1);
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    -o-transition: transform .5s;
     transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s;
 }
 
 
 .card:active {
     -webkit-transform: scale(.90);
-    transform: scale(.90);
+    -ms-transform: scale(.90);
+        transform: scale(.90);
     -webkit-transition: transform .2s;
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    -o-transition: transform .2s;
     transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
 }
 
 .card.flip {
@@ -225,11 +247,17 @@ p {
 
 
 .controls {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 
     gap: 6em;
 }
+
 
 
 .close-btn {
