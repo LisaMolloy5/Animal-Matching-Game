@@ -251,7 +251,7 @@ p {
 }
 
 .card.flip {
-    -webkit-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg) translateZ(0);
     transform: rotateY(180deg);
 }
 
@@ -270,6 +270,7 @@ p {
 .back {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+
 }
 
 /* Styling for the website buttons*/
