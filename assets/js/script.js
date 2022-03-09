@@ -28,7 +28,7 @@ let timerRef = setInterval(function () {
             backBtn.classList.add('hide')
             restartBtn.classList.add('hide')
         }, 500);
-        lockGame = true;
+        let lockGame = true;
 
     }
     document.getElementById('timer').innerText = timeLeft;
@@ -48,7 +48,7 @@ function flipCards() {
         firstCard = this;
 
         firstCard.removeEventListener('click', flipCards);
-        
+
     } else {
         // Second card clicked
         cardFlipped = false;
@@ -63,6 +63,7 @@ function checkMatch() {
     if (firstCard.dataset.name ===
         secondCard.dataset.name) {
 
+        // To remove the abilty to flip card one twice
         firstCard.removeEventListener('click', flipCards);
         secondCard.removeEventListener('click', flipCards);
 
@@ -73,7 +74,8 @@ function checkMatch() {
 
     } else {
         unflipCards();
-        
+
+        // To allow the clicked cards to be flipped again=
         firstCard.addEventListener('click', flipCards);
         secondCard.addEventListener('click', flipCards);
     }
@@ -85,7 +87,7 @@ function checkMatch() {
 
         lockGame = true;
 
-        
+
 
         setTimeout(() => {
             gameWin.classList.remove('hide');

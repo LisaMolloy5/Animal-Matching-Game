@@ -1,5 +1,7 @@
 # Animal Match
 A memory matching game for children. It hopes to provide a fun gaming experience with eyecatching images and entertaining game objectives.
+
+
 [Animal Match](https://lisamolloy5.github.io/animal-matching-game/)
 
 ## User Experience
