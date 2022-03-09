@@ -83,6 +83,9 @@ The 'Animal Matching Game' website was tested thoroughly. All code was ran thoug
 
 ![css validation bug](readme/bugs/cssbug.png)
 
+- A syntax error with a button accidently left in a anchor was easily fixed.
+![html validation bug](readme/buttonerror.png)
+
 - There was an error with my lockGame function within my JavaScript. I had wrote it as a variable. Once i had removed the let variable command it was fixed.
 
 ![JavaScript valiadtion bug](readme/bugs/js-validation-bug.png)
