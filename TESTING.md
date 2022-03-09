@@ -23,6 +23,8 @@ The 'Animal Matching Game' website was tested thoroughly. All code was ran thoug
 * Game page
 ![JavaScript valiadtion image](readme/game-javascript-validation.png)
 
+***
+
 ## User Stories Testing
 ***
 ### First Time Visitor Goals
@@ -55,3 +57,20 @@ The 'Animal Matching Game' website was tested thoroughly. All code was ran thoug
 * As a frequent visitor, I want to be able to play the game with different matching variaties.
  1. The shuffle function within the game allows the cards to be randomized when the game has loaded.
  2. Once the user presses 'Restart' or 'Play again' the order of the cards is shuffled.
+***
+
+## Responsive Testing
+***
+* Responsive design testing for the game website was carried out using [Google Chrome Dev Tools](https://www.google.com/chrome/dev/) and [Responsive Design Checker](https://responsivedesignchecker.com/)
+
+* The website was checked on various devices such as Galaxy Fold, Iphone 5/SE, Iphone X, Samsung Galay S8+, Nokia N9, Ipad, Galaxy Tab, Laptop and Desktop.
+
+* The game website was checked on all devices and orientations to check that all aspects of the game where withing the screen and not too small or too large.
+
+* Any issues that were shown, such as the website heading being to large on smaller mobile screens, the game being to large in landscape oreintation and the game being too small for larger screens, were fixed using media queries.
+
+ # Browser Compatibility Testing 
+  
+  * This Website was tested on the browsers Google Chrome, Safari, Microsoft Edge and Mozilla Firefox.
+  * The functionality of each page of the game website was checked to make sure they worked.
+  * The appearance of the website was checked on each browser to make sure nothing was out of place.
