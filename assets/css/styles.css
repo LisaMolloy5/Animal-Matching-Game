@@ -283,6 +283,12 @@ p {
 .back {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+
+    -webkit-transform: translateY(1px);
+
+    -ms-transform: translateY(1px);
+
+    transform: translateY(1px);
 }
 
 /* Styling for the website buttons*/
@@ -604,4 +610,3 @@ p {
     }
 
 }
-
